@@ -1,11 +1,10 @@
-import React from "react";
 import { TouchableOpacity, Text, StyleSheet } from "react-native";
-import { colors } from "../utils/colors";
+import { colors } from "../../assets/colors";
 
 export const RoundedButton = ({
   style = {},
   textStyle = {},
-  size = 125,
+  size = 126,
   ...props
 }) => {
   return (
@@ -28,5 +27,5 @@ const styles = (size) => ({
     borderColor: colors.white,
     borderWidth: 2,
   },
-  text: { color: colors.white, fontSize: size / 3 },
+  text: { color: colors.white, fontSize: size / 4 },
 });
